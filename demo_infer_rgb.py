@@ -46,6 +46,7 @@ def infer(image_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python demo_infer_rgb.py /path/to/spectrogram.png")
+        print("Usage")
         sys.exit(1)
     infer(sys.argv[1])
+

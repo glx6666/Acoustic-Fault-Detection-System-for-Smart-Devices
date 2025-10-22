@@ -149,7 +149,7 @@ def ask(req: Query, session_id: str = Form("default")):
 用户问题：{req.question}
 
 请结合以上信息，给出：
-1) 是否异常及原因推断（若无法确定，请说明）
+1) 是否异常及原因推断（若无法确定，请回答不知道）
 2) 推荐的下一步检查或修复动作（短期/长期）
 3) 置信度评估并说明理由
 """
@@ -174,3 +174,4 @@ def ask(req: Query, session_id: str = Form("default")):
     memory.append("assistant", answer)
 
     return {"answer": answer, "anomaly_score": anomaly_score, "threshold": threshold}
+

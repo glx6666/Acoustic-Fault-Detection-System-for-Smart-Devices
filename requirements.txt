@@ -1,0 +1,13 @@
+torch
+torchvision
+numpy
+scikit-learn
+sentence-transformers
+faiss-cpu
+openai
+fastapi
+uvicorn
+redis
+pydantic
+Pillow
+python-multipart
